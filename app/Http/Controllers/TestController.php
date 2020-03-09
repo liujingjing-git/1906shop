@@ -16,6 +16,5 @@ class TestController extends Controller
     public function redis2()
     {
         echo 22;
-        echo 222;
     }
 }

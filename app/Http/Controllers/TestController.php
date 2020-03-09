@@ -11,10 +11,10 @@ class TestController extends Controller
      */
     public function redis1()
     {
-        echo 11;
+        echo 111;
     }
     public function redis2()
     {
-        echo 22;
+        echo 222;
     }
 }

@@ -15,6 +15,7 @@ class TestController extends Controller
         $key = 'hello';
         $val = 'hi';
         Redis::set($key,$val);
+        
         echo "set 成功";
     }
     public function redis2()
@@ -22,6 +23,6 @@ class TestController extends Controller
         $key = 'hello';
         $val = Redis::get($key);
 
-        echo "值:".$val;
+        echo "值  :".$val;
     }
 }

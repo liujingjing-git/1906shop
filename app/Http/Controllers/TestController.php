@@ -11,7 +11,7 @@ class TestController extends Controller
      */
     public function redis1()
     {
-        echo 111;
+        echo 11;
     }
     public function redis2()
     {

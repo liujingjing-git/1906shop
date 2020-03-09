@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 
 class TestController extends Controller
 {
@@ -11,10 +12,16 @@ class TestController extends Controller
      */
     public function redis1()
     {
-        echo 11;
+        $key = 'hello';
+        $val = 'hi';
+        Redis::set($key,$val);
+        echo "set 成功";
     }
     public function redis2()
     {
-        echo 22;
+        $key = 'hello';
+        $val = Redis::get($key);
+
+        echo "值:".$val;
     }
 }

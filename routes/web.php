@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*测试方法*/
 Route::prefix('/test')->group(function(){
     Route::get('redis1','TestController@redis1');
     Route::get('redis2','TestController@redis2');
+    Route::get('mysql1','TestController@mysql1');
 });
